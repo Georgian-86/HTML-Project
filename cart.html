@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="ProImgs/logo.png" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html"> Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile" >
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+
+    <section id="cart-items">
+        <!-- Cart items will be displayed here -->
+        <div class="cart-item">
+            <img src="ProImgs/b7.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Price: $19.99</p>
+            <p>Quantity: 2</p>
+        </div>
+
+        <div class="cart-item">
+            <img src="ProImgs/b17.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $24.99</p>
+            <p>Quantity: 1</p>
+        </div>
+    </section>
+
+    <section id="cart-summary">
+        <!-- Cart summary information -->
+        <h2>Cart Summary</h2>
+        <p>Total Items: 2</p>
+        <p>Total Price: $64.97</p>
+    </section>
+
+    <footer>
+        <button onclick="checkout()">Proceed to Checkout</button>
+    </footer>
+
+    <script>
+        // Add your JavaScript code here if needed
+        function checkout() {
+            alert('Redirecting to checkout page');
+            // Add code to redirect to the checkout page
+        }
+    </script>
+
+</body>
+</html>
